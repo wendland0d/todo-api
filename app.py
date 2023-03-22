@@ -8,4 +8,4 @@ api.add_resource(UserResource, '/users', '/users/<int:user_id>', '/users/<string
 api.add_resource(AdminUserResource, '/admin/users/', '/admin/users/<string:model_username>')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, port=3000)

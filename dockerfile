@@ -4,8 +4,9 @@ WORKDIR /app
 
 COPY . /app
 
+RUN sudo apt-get install nano
 RUN pip install --trusted-host pypi.python.org -r requirements.txt
 
-EXPOSE 5000
+EXPOSE 3000
 
 CMD ["python", "app.py"]
